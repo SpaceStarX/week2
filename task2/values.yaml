@@ -1,0 +1,23 @@
+worker:
+  images: dockersamples/examplevotingapp_worker
+  tag: latest
+
+vote:
+  images: dockersamples/examplevotingapp_vote
+  tag: latest
+
+result:
+  images: dockersamples/examplevotingapp_result
+  tag: latest
+
+redis:
+  deploy: true
+
+postgres:
+  deploy: true
+
+role:
+  create: true
+
+rolebinding:
+  create: true
